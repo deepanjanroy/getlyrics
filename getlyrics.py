@@ -84,4 +84,4 @@ if __name__ == "__main__":
     query = ' '.join(sys.argv[1:])
     url = get_azlyrics_url(query)
     lyrics = get_lyrics(url)
-    print lyrics
+    print lyrics.encode('utf-8')
